@@ -72,8 +72,9 @@ final class ProfileViewController: UIViewController {
         let label = UILabel()
         label.text = person.fullName
         label.textAlignment = .center
+        label.font = .systemFont(ofSize: 20, weight: .bold)
         label.frame.origin = CGPoint(x: 0, y: personImageView.frame.maxY + 27)
-        label.frame.size = CGSize(width: 139, height: 24)
+        label.frame.size = CGSize(width: 200, height: 24)
         label.center.x = view.center.x
         
         return label
